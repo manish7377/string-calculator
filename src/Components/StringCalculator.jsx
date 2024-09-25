@@ -21,7 +21,7 @@ const StringCalculator = () => {
       />
       <button onClick={handleCalculate}>Calculate</button>
 
-      {result ? <h4>Sum of numbers: {result}</h4>: null}
+      {result>=0 && result!=null ? <h4>Sum of numbers: {result}</h4>: null}
     </>
   );
 };
