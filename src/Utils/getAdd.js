@@ -1,5 +1,5 @@
 export const getAdd=(numbers)=>{
- let add=0;
+    let add= numbers.split(',').reduce((acc,item)=>acc+Number(item),0)
 
- return `${add}`;
+    return add;
 }
